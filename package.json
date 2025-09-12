@@ -1,0 +1,14 @@
+{
+  "name": "edit",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "concurrently \"npm run server\" \"npm run frontend\" \"npm run admin\"",
+    "server": "cd backend && npm run start:dev",
+    "frontend": "cd frontend && npm start",
+    "admin": "cd admin && npm start"
+  },
+  "devDependencies": {
+    "concurrently": "^9.0.0"
+  }
+}
